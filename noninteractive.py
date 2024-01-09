@@ -19,14 +19,14 @@ print("""
 """)
 
 # Default Minecraft server script URL
-server_url = "https://papermc.io/api/v2/projects/paper/versions/1.16.5/builds/790/downloads/paper-1.16.5-790.jar"
+server_url = "https://papermc.io/api/v2/projects/paper/versions/1.17/builds/66/downloads/paper-1.17-66.jar"
 
 # Download the Minecraft server script
 urllib.request.urlretrieve(server_url, "server.jar")
 
 # Download openjdk-17-jdk
 subprocess.run(["sudo", "apt-get", "update"])
-subprocess.run(["sudo", "apt-get", "install", "openjdk-8-jdk", "-y"])
+subprocess.run(["sudo", "apt-get", "install", "openjdk-17-jdk", "-y"])
 
 # Set default RAM amount
 ram_amount = "2"  # Default to 2GB, you can change this if needed
