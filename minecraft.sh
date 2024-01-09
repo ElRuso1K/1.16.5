@@ -19,11 +19,11 @@ read -p "Please enter the URL of the Minecraft server script (press Enter to use
 server_url=${server_url:-"https://papermc.io/api/v2/projects/paper/versions/1.16.5/builds/790/downloads/paper-1.16.5-790.jar"}
 
 # Download the Minecraft server script
-wget -O paper-1.16.5-790.jar $server_url
+wget -O server.jar $server_url
 
 # Download openjdk-16-jdk
 sudo apt-get update
-sudo apt-get install jdk-16.0.2_linux-aarch64_bin.rpm -y
+sudo apt-get install openjdk-8-jdk -y
 
 # Ask the user if they accept the Minecraft EULA
 read -p "Do you accept the Minecraft EULA? (Type 'yes' or 'y' to accept): " eula_acceptance
