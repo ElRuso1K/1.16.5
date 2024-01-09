@@ -16,7 +16,7 @@ echo "
 
 # Ask the user for the Minecraft server script URL
 read -p "Please enter the URL of the Minecraft server script (press Enter to use the default URL): " server_url
-server_url=${server_url:-"https://papermc.io/api/v2/projects/paper/versions/1.17/builds/66/downloads/paper-1.17-66.jar"}
+server_url=${server_url:-"https://api.papermc.io/v2/projects/paper/versions/1.20.1/builds/196/downloads/paper-1.20.1-196.jar"}
 
 # Download the Minecraft server script
 wget -O server.jar $server_url
